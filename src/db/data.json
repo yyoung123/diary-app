@@ -1,0 +1,32 @@
+{
+  "diary": [
+    {
+      "id": 1,
+      "writer": "장성호",
+      "contents": "날씨가 조아요",
+      "emotion": 1,
+      "date": 2022
+    },
+    {
+      "id": 2,
+      "writer": "정우성",
+      "contents": "날씨가 조아요",
+      "emotion": 1,
+      "date": 2022
+    },
+    {
+      "id": 3,
+      "writer": "원빈",
+      "contents": "날씨가 조아요",
+      "emotion": 1,
+      "date": 2022
+    },
+    {
+      "id": 4,
+      "writer": "김우빈",
+      "contents": "날씨가 조아요",
+      "emotion": 1,
+      "date": 2022
+    }
+  ]
+}

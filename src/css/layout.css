@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #111;
+  background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, 0, transparent 50px);
+  background-color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+#header h1 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #ccc,2px 2px 0px #ccc,3px 3px 0px #ccc,4px 4px 0px #ccc,5px 5px 0px #ccc,6px 6px 0px #ccc,7px 7px 0px #ccc,8px 8px 0px #ccc,9px 9px 0px #ccc,10px 10px 0px #ccc,11px 11px 0px #ccc,12px 12px 0px #ccc,13px 13px 0px #ccc,14px 14px 0px #ccc,15px 15px 0px #ccc,16px 16px 0px #ccc,17px 17px 0px #ccc,18px 18px 0px #ccc,19px 19px 0px #ccc,20px 20px 0px #ccc,21px 21px 0px #ccc,22px 22px 0px #ccc,23px 23px 0px #ccc,24px 24px 0px #ccc,25px 25px 0px #ccc,26px 26px 0px #ccc,27px 27px 0px #ccc,28px 28px 0px #ccc,29px 29px 0px #ccc,30px 30px 0px #ccc,31px 31px 0px #ccc,32px 32px 0px #ccc,33px 33px 0px #ccc,34px 34px 0px #ccc,35px 35px 0px #ccc,36px 36px 0px #ccc,37px 37px 0px #ccc,38px 38px 0px #ccc,39px 39px 0px #ccc,40px 40px 0px #ccc,41px 41px 0px #ccc,42px 42px 0px #ccc,43px 43px 0px #ccc,44px 44px 0px #ccc,45px 45px 0px #ccc,46px 46px 0px #ccc,47px 47px 0px #ccc,48px 48px 0px #ccc,49px 49px 0px #ccc,50px 50px 0px #ccc;
+}
+#header h1 strong {
+  font-weight: 700;
+}
+
+.checkBox {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.checkBox input {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  border: 0;
+}
+.checkBox input:checked ~ .label:before {
+  content: "\e5ca";
+  font-family: "Material Icons";
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  background-color: #2c81f0;
+  text-shadow: 1px 1px 0px rgb(15, 103, 218),2px 2px 0px rgb(15, 103, 218),3px 3px 0px rgb(15, 103, 218),4px 4px 0px rgb(15, 103, 218),5px 5px 0px rgb(15, 103, 218),6px 6px 0px rgb(15, 103, 218),7px 7px 0px rgb(15, 103, 218),8px 8px 0px rgb(15, 103, 218),9px 9px 0px rgb(15, 103, 218),10px 10px 0px rgb(15, 103, 218);
+}
+.checkBox .label {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.checkBox .label:before {
+  content: "\e5ca";
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  margin-right: 6px;
+  font-family: "Material Icons";
+  color: #acacac;
+  border: 1px solid #c5c5c5;
+  font-weight: bold;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  text-shadow: 1px 1px 0px #dfdfdf,2px 2px 0px #dfdfdf,3px 3px 0px #dfdfdf,4px 4px 0px #dfdfdf,5px 5px 0px #dfdfdf,6px 6px 0px #dfdfdf,7px 7px 0px #dfdfdf,8px 8px 0px #dfdfdf,9px 9px 0px #dfdfdf,10px 10px 0px #dfdfdf;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: rgb(218, 15, 15);
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btns .btn {
+  padding: 20px 50px;
+  color: #fff;
+  border-radius: 100px;
+  background-color: rgb(15, 103, 218);
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  overflow: hidden;
+  text-shadow: 1px 1px 0px #0c50aa,2px 2px 0px #0c50aa,3px 3px 0px #0c50aa,4px 4px 0px #0c50aa,5px 5px 0px #0c50aa,6px 6px 0px #0c50aa,7px 7px 0px #0c50aa,8px 8px 0px #0c50aa,9px 9px 0px #0c50aa,10px 10px 0px #0c50aa,11px 11px 0px #0c50aa,12px 12px 0px #0c50aa,13px 13px 0px #0c50aa,14px 14px 0px #0c50aa,15px 15px 0px #0c50aa,16px 16px 0px #0c50aa,17px 17px 0px #0c50aa,18px 18px 0px #0c50aa,19px 19px 0px #0c50aa,20px 20px 0px #0c50aa,21px 21px 0px #0c50aa,22px 22px 0px #0c50aa,23px 23px 0px #0c50aa,24px 24px 0px #0c50aa,25px 25px 0px #0c50aa,26px 26px 0px #0c50aa,27px 27px 0px #0c50aa,28px 28px 0px #0c50aa,29px 29px 0px #0c50aa,30px 30px 0px #0c50aa,31px 31px 0px #0c50aa,32px 32px 0px #0c50aa,33px 33px 0px #0c50aa,34px 34px 0px #0c50aa,35px 35px 0px #0c50aa,36px 36px 0px #0c50aa,37px 37px 0px #0c50aa,38px 38px 0px #0c50aa,39px 39px 0px #0c50aa,40px 40px 0px #0c50aa;
+}
+
+.diaryItem textarea {
+  height: 100px;
+}
+
+.section {
+  text-align: left;
+  color: #fff;
+}
+
+.contents {
+  text-align: left;
+}
+
+.infoBox {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 800px;
+}
+.infoBox dl {
+  display: flex;
+  align-items: center;
+}
+.infoBox dl dd {
+  margin-left: 5px;
+  transform: translateY(2px);
+}
+
+.diaryList .titleBox {
+  color: #fff;
+  margin: 50px 0;
+  padding-top: 50px;
+  border-top: 1px dashed #fff;
+}
+.diaryList .titleBox h2 {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.diaryList .titleBox .total {
+  text-align: right;
+}
+.diaryList .list li {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.diaryList .list li .info {
+  display: flex;
+  position: relative;
+}
+.diaryList .list li dl {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.diaryList .list li dl dd {
+  margin-left: 5px;
+}
+.diaryList .list li .btns {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -5px;
+}
+.diaryList .list li .btns .btn {
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+.diaryList .list li .btns .confirm {
+  background-color: rgb(218, 15, 15);
+  text-shadow: 1px 1px 0px #aa0c0c,2px 2px 0px #aa0c0c,3px 3px 0px #aa0c0c,4px 4px 0px #aa0c0c,5px 5px 0px #aa0c0c,6px 6px 0px #aa0c0c,7px 7px 0px #aa0c0c,8px 8px 0px #aa0c0c,9px 9px 0px #aa0c0c,10px 10px 0px #aa0c0c,11px 11px 0px #aa0c0c,12px 12px 0px #aa0c0c,13px 13px 0px #aa0c0c,14px 14px 0px #aa0c0c,15px 15px 0px #aa0c0c,16px 16px 0px #aa0c0c,17px 17px 0px #aa0c0c,18px 18px 0px #aa0c0c,19px 19px 0px #aa0c0c,20px 20px 0px #aa0c0c,21px 21px 0px #aa0c0c,22px 22px 0px #aa0c0c,23px 23px 0px #aa0c0c,24px 24px 0px #aa0c0c,25px 25px 0px #aa0c0c,26px 26px 0px #aa0c0c,27px 27px 0px #aa0c0c,28px 28px 0px #aa0c0c,29px 29px 0px #aa0c0c,30px 30px 0px #aa0c0c;
+}
+.diaryList .list li .contents {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 20px;
+  border-top: 1px dashed #d9d9d9;
+  white-space: pre-wrap;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#footer p {
+  padding: 15px 30px;
+  background-color: #fff;
+  font-weight: 300;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+#footer p strong {
+  font-weight: 900;
+}
